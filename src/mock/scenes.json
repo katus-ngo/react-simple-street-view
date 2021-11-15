@@ -1,0 +1,183 @@
+{
+  "scenes": [
+    {
+      "id": 0,
+      "imageUrl": "/images/stairs_0.jpeg",
+      "hitZones": [
+        {
+          "x": "19.82%",
+          "y": "32,02%",
+          "goto": 1
+        }
+      ],
+      "mainPosition": {
+        "x": "15.28%",
+        "y": "0%"
+      }
+    },
+    {
+      "id": 1,
+      "imageUrl": "/images/stairs_1.jpeg",
+      "hitZones": [
+        {
+          "x": "26.11%",
+          "y": "32.02%",
+          "goto": 2
+        },
+        {
+          "x": "62.1%",
+          "y": "71.43%",
+          "goto": 0
+        }
+      ],
+      "mainPosition": {
+        "x": "22.51%",
+        "y": "0%"
+      }
+    },
+    {
+      "id": 2,
+      "imageUrl": "/images/stairs_2.jpeg",
+      "hitZones": [
+        {
+          "x": "13.05%",
+          "y": "32.02%",
+          "goto": 3
+        }
+      ],
+      "mainPosition": {
+        "x": "9.63%",
+        "y": "0%"
+      }
+    },
+    {
+      "id": 3,
+      "imageUrl": "/images/stairs_3.jpeg",
+      "hitZones": [
+        {
+          "x": "26.24%",
+          "y": "23.15%",
+          "goto": 4
+        }
+      ],
+      "mainPosition": {
+        "x": "22.83%",
+        "y": "0%"
+      }
+    },
+    {
+      "id": 4,
+      "imageUrl": "/images/trail_4.jpeg",
+      "hitZones": [
+        {
+          "x": "17.89%",
+          "y": "23.15%",
+          "goto": 5
+        }
+      ],
+      "mainPosition": {
+        "x": "14.84%",
+        "y": "0%"
+      }
+    },
+    {
+      "id": 5,
+      "imageUrl": "/images/trail-three-way_5.jpeg",
+      "hitZones": [
+        {
+          "x": "50%",
+          "y": "63.79%",
+          "goto": 6
+        },
+        {
+          "x": "81.15%",
+          "y": "43%",
+          "goto": 7
+        },
+        {
+          "x": "13.5%",
+          "y": "48.15%",
+          "goto": 4
+        }
+      ],
+      "mainPosition": {
+        "x": "44.4%",
+        "y": "0%"
+      }
+    },
+    {
+      "id": 6,
+      "imageUrl": "/images/house-view_6.jpeg",
+      "hitZones": [],
+      "mainPosition": {
+        "x": "54.69%",
+        "y": "0%"
+      }
+    },
+    {
+      "id": 7,
+      "imageUrl": "/images/near-top-c_7.jpeg",
+      "hitZones": [
+        {
+          "x": "63.96%",
+          "y": "45.69%",
+          "goto": 8
+        },
+        {
+          "x": "81.16%",
+          "y": "45.69%",
+          "goto": 9
+        },
+        {
+          "x": "24.62%",
+          "y": "60.59%",
+          "goto": 8
+        }
+      ],
+      "mainPosition": {
+        "x": "59.91%",
+        "y": "0%"
+      }
+    },
+    {
+      "id": 8,
+      "imageUrl": "/images/near-top-b_8.jpeg",
+      "hitZones": [
+        {
+          "x": "8.28%",
+          "y": "60.59%",
+          "goto": 9
+        },
+        {
+          "x": "42.92%",
+          "y": "60.59%",
+          "goto": 9
+        }
+      ],
+      "mainPosition": {
+        "x": "4.6%",
+        "y": "0%"
+      }
+    },
+    {
+      "id": 9,
+      "imageUrl": "/images/top_9.jpeg",
+      "hitZones": [
+        {
+          "x": "32.04%",
+          "y": "45.44%",
+          "goto": 8
+        },
+        {
+          "x": "49.66%",
+          "y": "51.72%",
+          "goto": 7
+        }
+      ],
+      "mainPosition": {
+        "x": "28.54%",
+        "y": "0%"
+      }
+    }
+  ]
+}

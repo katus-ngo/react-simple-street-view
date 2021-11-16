@@ -1,0 +1,90 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  &__picture-container {
+    height: 100%;
+    width: fit-content;
+    position: relative;
+  }
+
+  &__picture--hidden {
+    visibility: hidden;
+    height: 100%;
+    width: auto;
+  }
+
+  &__picture--visible {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  &__hit-zone {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #acb5bd;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #dee2e6;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+
+    &:hover {
+      width: 80px;
+      height: 80px;
+      transition: all 300ms ease-out;
+    }
+  }
+
+  &__hit-icon {
+    width: 50%;
+    height: 50%;
+    color: #6c757d;
+  }
+
+  &__view-action {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    max-width: 150px;
+
+    &--left {
+      left: 0;
+      top: 0;
+    }
+
+    &--right {
+      right: 0;
+      top: 0;
+    }
+
+    &--back {
+      height: 20vw;
+      max-height: 150px;
+      width: 100vw;
+      max-width: unset;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__view-action-icon {
+    width: 50%;
+    height: 50%;
+    color: #dee2e6;
+  }
+}

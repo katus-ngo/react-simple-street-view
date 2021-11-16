@@ -61,15 +61,30 @@
     justify-content: center;
     width: 20vw;
     max-width: 150px;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &--left {
       left: 0;
       top: 0;
+      transform: translateX(-100%);
+
+      &--show {
+        transform: translateX(0);
+      }
     }
 
     &--right {
       right: 0;
       top: 0;
+      transform: translateX(100%);
+
+      &--show {
+        transform: translateX(0);
+      }
     }
 
     &--back {
@@ -79,12 +94,22 @@
       max-width: unset;
       left: 0;
       bottom: 0;
+      transform: translatey(100%);
+
+      &--show {
+        transform: translatey(0);
+      }
     }
   }
 
   &__view-action-icon {
+    width: 100%;
+    height: 100%;
+    color: #dee2e6;
+  }
+
+  &__view-action-icon-container {
     width: 50%;
     height: 50%;
-    color: #dee2e6;
   }
 }

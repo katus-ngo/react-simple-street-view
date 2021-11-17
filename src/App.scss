@@ -5,10 +5,26 @@
   position: relative;
   overflow: hidden;
 
+  &__picture-list {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
   &__picture-container {
     height: 100%;
     width: fit-content;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    z-index: 0;
+
+    &--active {
+      opacity: 1;
+      z-index: 1;
+    }
   }
 
   &__picture--hidden {
@@ -23,6 +39,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    transition: all 500ms linear;
   }
 
   &__hit-zone {
@@ -43,7 +60,7 @@
     &:hover {
       width: 80px;
       height: 80px;
-      transition: all 300ms ease-out;
+      transition: all 300ms ease-in-out;
     }
   }
 
@@ -62,6 +79,7 @@
     width: 20vw;
     max-width: 150px;
     transition: all 300ms ease-in-out;
+    z-index: 1;
 
     &:hover {
       cursor: pointer;

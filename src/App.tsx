@@ -8,8 +8,8 @@ import {useWindowDimensions} from "./hooks";
 
 function App() {
 
-    let hitZonesRef = useRef<any[]>([]);
-    let viewActionRef = useRef<any[]>([]);
+    let hitZonesRef = useRef<HTMLDivElement[]>([]);
+    let viewActionRef = useRef<HTMLSpanElement[]>([]);
     let activePictureRef = useRef<HTMLDivElement>(null)
 
     const {width: windowWidth} = useWindowDimensions()
@@ -67,7 +67,9 @@ function App() {
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
-            if ((hitZonesRef?.current?.concat(viewActionRef.current)).every((ref) => !(ref && ref?.contains(event.target)))) {
+            const whiteListElement = [...hitZonesRef.current, ...viewActionRef.current]
+            const el = event.target
+            if (whiteListElement.every((ref) => !(ref && el instanceof Node &&  ref?.contains(el)))) {
                 setShowViewAction(s => !s)
                 return
             }
